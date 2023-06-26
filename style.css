@@ -1,0 +1,153 @@
+body{
+    font-size: 18px;
+    background: #eee9;
+}
+body a{
+    text-decoration:  none;
+    color: black;
+    font-size: 16px;
+}
+.header-area{
+    width: 100%;
+    background-color: white;
+    box-shadow:0px 0px 5px 5px #eeecec;
+
+    height: 54px;
+}
+.header-logo{
+    width: 10%;
+    float: left;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.header-menu{
+    width:80%;
+    float:left;
+}
+.header-setting{
+    width:8%;
+    float: left;
+    padding-top: 10px;
+    margin-top: 6px;
+}
+.header-menu ul{}
+.header-menu ul li{
+    display: inline-block;
+    padding:0px 5px;
+}
+.header-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.header-menu ul li a:hover{}
+
+.left-side {
+    float: left;
+    width: 16%;
+    background: white;
+    height: 100vh;
+    margin-top: 10px;
+  }
+.right-side {
+    float: left;
+    width: 80%;
+    height: 100vh;
+    background: white;
+    margin-left: 16px;
+    margin-top: 10px;
+  }
+  .home-menu{
+    float:left;
+    width: 64%;
+  }
+  .search-box{
+    width: 20%;
+    float: left;
+    display: flex;
+  }
+  .home-menu ul{
+    width: 100%;
+  }
+  .home-menu ul li{
+    display: inline-block;
+    padding: 5px 2px;
+  }
+.search-box-text{
+    width: 290px;
+    height: 15px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.search-box-btn{
+    display: inline-block;
+    width:30px;
+    height: 29px;
+    margin-top: 10px;
+    margin-left: -24px;
+    
+}
+.table-area {
+    clear: both;
+    width: 100%;
+  }
+.table {
+    width: 100%;
+
+  }
+  .table tr:nth-child(even){
+    background:#d4dfe1;
+  }
+  .first-row {
+    background: #000053;
+    color: white;
+}
+
+.root-box {
+    width: 144px;
+    font-size: 15px;
+    color: black !important;
+    margin: 0px !important;
+    border-left: 1px solid gray;
+    border: 0px aliceblue;
+      border-left-color: aliceblue;
+      border-left-style: none;
+      border-left-width: 0px;
+    border-left: 1px solid #828181;
+    height: 26px;
+  }
+  
+  .root-btn {
+    width: 32px;
+    height: 30px;
+    padding: 0px;
+    margin-left: -3px;
+    border-left: 1px solid gray;
+    margin-top: -24px;
+    border: 0px;
+      border-left-color: currentcolor;
+      border-left-style: none;
+      border-left-width: 0px;
+    border-left: 1px solid #828181;
+  }
+  .root-bar {
+    border: 1px solid #b7b7b7;
+    border-radius: 5px;
+    padding-left: 3px;
+  }
+ .grid-box{
+    float: left;
+    width: 8%;
+    /* padding-left: 7px; */
+    margin-right: 56px;
+    background: #e1dfdf;
+    margin-top: 18px;
+    border-radius: 5px;
+
+ }
+ .grid-box span i{
+    padding:5px;
+ }
+ .grid-box span i:hover{
+    background:rgb(41, 148, 219);
+    cursor:pointer;
+ }

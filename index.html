@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whcms panel</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+   
+    <!-- main style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+         <div class="col-lg-12">
+            <div class="header-area">
+                <div class="header-logo">File Manager</div>
+                <div class="header-menu">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-plus"></i> Create New</a></li>
+                        <li><a href=""><i class="fa-solid fa-arrow-up"></i> Upload</a></li>
+                        <li><a href=""><i class="fa-solid fa-copy"></i> Copy</a></li>
+                        <li><a href=""><i class="fa-solid fa-arrows-up-down-left-right"></i> Move</a></li>
+                        <li><a href="">Rename</a></li>
+                        <li><a href=""><i class="fa-solid fa-trash"></i> Delete</a></li>
+                        <li><a href=""><i class="fa-solid fa-rotate-left"></i> Undo</a></li>
+                        <li><a href=""><i class="fa-solid fa-pen-to-square"></i> Edit</a></li>
+                        <li><a href=""><i class="fa-solid fa-shield-halved"></i> Permission</a></li>
+                        <li><a href=""><i class="fa-solid fa-eye"></i> View</a></li>
+                        <li><a href=""><i class="fa-solid fa-download"></i> Download</a></li>
+                        <li><a href=""><i class="fa-solid fa-file-zipper"></i> Zip/Unzip</a></li>
+                    </ul>
+                </div>
+                <div class="header-setting">
+                    <a href=""><i class="fa-solid fa-gear"></i> Preferences</a>
+                </div>
+            </div>
+
+            <div class="main-area">
+                <div class="left-side">
+                    <div class="root-bar">
+                        <i class="fa-solid fa-house"></i>
+                        <input type="text" name="" id="" placeholder="/public_html" class="root-box">
+                        <input type="submit" value="go" class="root-btn">
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="home-menu">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Up</a></li>
+                            <li><a href="">Back</a></li>
+                            <li><a href="">Forward</a></li>
+                            <li><a href="">Reload</a></li>
+                            <li><a href=""><input type="checkbox">Select all</a></li>
+                            <li><a href=""><input type="checkbox">Unselect all</a></li>
+                            <li><a href="">View trash</a></li>
+                            <li><a href="">Empty trash</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                        <span><i class="fa-solid fa-grip"></i></span>
+                        <span><i class="fa-solid fa-pause"></i></span>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search files and folders" class="search-box-text">
+                        <input type="submit" value="s" class="search-box-btn">
+                    </div>
+
+                    <!-- table part -->
+                    <div class="table-area">
+                        <table class="table " CELLSPACING="0" CELLPADDING="2">
+                            <tr class="first-row">
+                                <td>Name</td>
+                                <td>Permission</td>
+                                <td>Last Modified</td>
+                                <td>Size</td>
+                                <td>Type</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-folder"></i> wp-admin</td>
+                                <td>read write</td>
+                                <td>May 22 2023</td>
+                                <td>-</td>
+                                <td>Folder</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-folder"></i> wp-admin</td>
+                                <td>read write</td>
+                                <td>May 22 2023</td>
+                                <td>-</td>
+                                <td>Folder</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-folder"></i> wp-admin</td>
+                                <td>read write</td>
+                                <td>May 22 2023</td>
+                                <td>-</td>
+                                <td>Folder</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-folder"></i> wp-admin</td>
+                                <td>read write</td>
+                                <td>May 22 2023</td>
+                                <td>-</td>
+                                <td>Folder</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-folder"></i> wp-admin</td>
+                                <td>read write</td>
+                                <td>May 22 2023</td>
+                                <td>-</td>
+                                <td>Folder</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-folder"></i> wp-content</td>
+                                <td>read write</td>
+                                <td>May 22 2023</td>
+                                <td>-</td>
+                                <td>Folder</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-folder"></i> wp-include</td>
+                                <td>read write</td>
+                                <td>May 22 2023</td>
+                                <td>-</td>
+                                <td>Folder</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-file"></i> index.php</td>
+                                <td>read write</td>
+                                <td>May 22 2023</td>
+                                <td>-</td>
+                                <td>Folder</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </div>
+    </div> 
+</body>
+</html>
