@@ -15,13 +15,13 @@ body a{
     height: 54px;
 }
 .header-logo{
-    width: 10%;
+    width: 8%;
     float: left;
     margin-left: 20px;
     padding-top: 20px;
 }
 .header-menu{
-    width:80%;
+    width:82%;
     float:left;
 }
 .header-setting{
@@ -103,21 +103,22 @@ body a{
 }
 
 .root-box {
-    width: 144px;
+    width: 67%;
     font-size: 15px;
     color: black !important;
     margin: 0px !important;
     border-left: 1px solid gray;
     border: 0px aliceblue;
-      border-left-color: aliceblue;
-      border-left-style: none;
-      border-left-width: 0px;
+    border-left-color: aliceblue;
+    border-left-style: none;
+    border-left-width: 0px;
     border-left: 1px solid #828181;
     height: 26px;
+    border-radius: 0px 5px 5px 0px;
   }
   
   .root-btn {
-    width: 32px;
+    width: 17%;
     height: 30px;
     padding: 0px;
     margin-left: -3px;
@@ -150,4 +151,11 @@ body a{
  .grid-box span i:hover{
     background:rgb(41, 148, 219);
     cursor:pointer;
+ }
+ .left-menu ul{
+  margin-left: -20px;
+ }
+ .left-menu ul li{
+  display:block;
+  padding:3px 5px;
  }
