@@ -47,10 +47,10 @@
                     <div class="left-menu">
                         <ul>
                             <li><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> .acme</a></li>
-                            <li><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> .cagefs</a>
-                                <ul>
-                                    <li><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> .ca</a></li>
-                                    <li><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> test.mahsan.net</a></li>
+                            <li class="dropdown"><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> .cagefs</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href=""><i class="fa-solid fa-caret-down dropdown-icon"></i> <i class="fa-solid fa-folder"></i> .ca</a></li>
+                                    <li><a href=""><i class="fa-solid fa-caret-down dropdown-icon"></i> <i class="fa-solid fa-folder"></i> test.mahsan.net</a></li>
                                 </ul>
                             </li>
                             <li><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> .cl.selector</a></li>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="search-box">
                         <input type="text" placeholder="Search files and folders" class="search-box-text">
-                        <input type="submit" value="s" class="search-box-btn">
+                        <input type="submit" value=" " class="search-box-btn">
                     </div>
 
                     <!-- table part -->
@@ -161,5 +161,38 @@
          </div>
         </div>
     </div> 
+
+
+    <!-- jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(function(){
+  
+  $('li.dropdown > a').on('click',function(event){
+    
+    event.preventDefault();
+    $(this).toggleClass('selected');
+    $(this).parent().find('ul').first().toggle(300);
+    
+    $(this).parent().siblings().find('ul').hide(200);
+    
+    //Hide menu when clicked outside
+    $(this).parent().find('ul').parent().mouseleave(function(){ 
+      var thisUI = $(this);
+      $('html').click(function(){
+        thisUI.children(".dropdown-menu").hide();
+    thisUI.children("a").removeClass('selected');
+               
+        $('html').unbind('click');
+      });
+    });
+    
+    
+  });
+  
+  
+});
+    </script>
 </body>
 </html>

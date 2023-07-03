@@ -84,6 +84,7 @@ body a{
     height: 29px;
     margin-top: 10px;
     margin-left: -24px;
+    background: url("img/Capture-removebg-preview.png");
     
 }
 .table-area {
@@ -137,7 +138,7 @@ body a{
   }
  .grid-box{
     float: left;
-    width: 8%;
+    width: 87px;
     /* padding-left: 7px; */
     margin-right: 56px;
     background: #e1dfdf;
@@ -159,3 +160,15 @@ body a{
   display:block;
   padding:3px 5px;
  }
+ .dropdown-menu{
+  display:none;
+ }
+ i.fa-solid.fa-folder {
+  color: #8ec1f2;
+}
+i.fa-solid.fa-file {
+  color: #366472;
+}
+i.fa-solid.fa-caret-down.dropdown-icon {
+  transform: rotate(271deg);
+}
