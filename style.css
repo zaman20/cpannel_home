@@ -5,7 +5,7 @@ body{
 body a{
     text-decoration:  none;
     color: black;
-    font-size: 16px;
+    font-size: 15px;
 }
 .header-area{
     width: 100%;
@@ -15,13 +15,17 @@ body a{
     height: 54px;
 }
 .header-logo{
-    width: 8%;
+    width: 13%;
     float: left;
     margin-left: 20px;
-    padding-top: 20px;
+    
+}
+img.logo {
+  WIDTH: 50px;
+  height: 33px;
 }
 .header-menu{
-    width:82%;
+    width:77%;
     float:left;
 }
 .header-setting{
@@ -138,7 +142,7 @@ body a{
   }
  .grid-box{
     float: left;
-    width: 87px;
+    width: 83px;
     /* padding-left: 7px; */
     margin-right: 56px;
     background: #e1dfdf;
@@ -171,4 +175,16 @@ i.fa-solid.fa-file {
 }
 i.fa-solid.fa-caret-down.dropdown-icon {
   transform: rotate(271deg);
+}
+i.fa-solid.fa-xmark, i.fa-solid.fa-trash{
+  color:red;
+}
+i.fa-solid.fa-copy {
+  color: #aeaef8;
+}
+i.fa-solid.fa-arrow-up, i.fa-solid.fa-download{
+  color: #03a9cf;
+}
+i.fa-solid.fa-pen-to-square {
+  color: #8291ee;
 }
