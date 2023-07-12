@@ -225,3 +225,31 @@ span.text-logo {
   width: 100%;
   height: 51px;
 }
+.mobile-menu {
+  width: 100%;
+  float: right;
+  background: #fff;
+  display: none;
+  margin-top: -13px;
+}
+.fa-solid.fa-bars-staggered {
+  position: absolute;
+  right: 40px;
+  top: 32px;
+  font-size: 28px;
+}
+.mobile-menu ul{
+  width: 100%;
+  margin-left: 30px;
+  margin-top: 23px;
+}
+.mobile-menu ul li{
+  display: block;
+  padding:4px 5px;
+}
+.mobile-menu ul li a{
+  font-size: 18px;
+}
+.mobile-menu ul li a:hover{
+  text-decoration: underline;
+}

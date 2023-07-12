@@ -1,0 +1,35 @@
+@media only screen and (min-width:200px) and (max-width:999px) {
+    .header-area{height: 70px;}
+    .header-logo{width: 15%;}
+    .header-menu{width: 80%;}
+    .left-side{width: 15%;}
+    .home-menu{width: 93%;}
+    .grid-box{margin-left: 42px;margin-top: -5px;}
+    .search-box{width: 31%;margin-top: -16px;margin-bottom: 14px;}
+    .root-box{width: 56%;font-size: 11px;}
+    .footer-left{width: 33%;}
+    .footer-right{width: 40%;}
+}
+ @media only screen  and (min-width:200px) and (max-width:815px) {
+    .header-menu{width: 100%;}
+    .left-side{width: 90%;margin:0 auto;float: none;margin-top: 25px;}
+    .root-box{width: 73%;font-size: 17px;}
+    .right-side {width: 92%;float: none;margin: 0 auto;margin-top: 22px;}
+    .home-menu{width: 85%;}
+    .search-box{width: 75%;margin-left: 40px;margin-top: 0px;}
+    .search-box-text{width: 185px;font-size: 13px;}
+    .table-area{font-size: 12px;}
+    .footer-area{height: 26px;}
+    .footer-left{width: 35%;font-size: 8px;margin-top: 0px;}
+    .footer-right{width: 54%;font-size: 8px;margin-top: 0px;}
+    .header-menu{display: none;}
+    .mobile-menu{display: block;}
+    .header-logo{width: 5%;}
+    span.text-logo{top:50px;}
+    .header-area{width: 99%;}
+
+}
+/*
+@media only screen and (min-width:200px) and (max-width:450px) {
+    
+} */
