@@ -17,7 +17,7 @@
             <div class="header-area">
                 <div class="header-logo">
                     <img src="img/Capture.PNG" alt="" class="logo">
-                    <span>File Manager</span>
+                    <span class="text-logo">File Manager</span>
                 </div>
                 <div class="header-menu">
                     <ul>
@@ -33,11 +33,12 @@
                         <li><a href=""><i class="fa-solid fa-eye"></i> View</a></li>
                         <li><a href=""><i class="fa-solid fa-download"></i> Download</a></li>
                         <li><a href=""><i class="fa-solid fa-file-zipper"></i> Zip/Unzip</a></li>
+                        <li><a href=""><i class="fa-solid fa-gear"></i> Preferences</a></li>
                     </ul>
                 </div>
-                <div class="header-setting">
+                <!-- <div class="header-setting">
                     <a href=""><i class="fa-solid fa-gear"></i> Preferences</a>
-                </div>
+                </div> -->
             </div>
 
             <div class="main-area">
@@ -64,7 +65,17 @@
                             <li><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> .cl.selector</a></li>
                             <li><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> .softaculus</a></li>
                             <li><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> mail</a></li>
-                            <li><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> public_html</a></li>
+                            <li class="dropdown"><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> public_html</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href=""><i class="fa-solid fa-caret-down dropdown-icon"></i> <i class="fa-solid fa-folder"></i> .ca</a></li>
+                                    <li class="dropdown"><a href=""><i class="fa-solid fa-caret-down dropdown-icon"></i> <i class="fa-solid fa-folder"></i> test.mahsan.net</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href=""><i class="fa-solid fa-caret-down dropdown-icon"></i> <i class="fa-solid fa-folder"></i> .ca</a></li>
+                                            <li><a href=""><i class="fa-solid fa-caret-down dropdown-icon"></i> <i class="fa-solid fa-folder"></i> test.mahsan.net</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> ssl</a></li>
                             <li><a href=""><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> www</a></li>
                             
@@ -72,28 +83,30 @@
                     </div>
                 </div>
                 <div class="right-side">
-                    <div class="home-menu">
-                        <ul>
-                            <li><a href=""><i class="fa-solid fa-house"></i> Home</a></li>
-                            <li><a href=""><i class="fa-solid fa-arrow-turn-up"></i> Up</a></li>
-                            <li><a href=""><i class="fa-solid fa-arrow-left"></i> Back</a></li>
-                            <li><a href=""><i class="fa-solid fa-arrow-right"></i> Forward</a></li>
-                            <li><a href=""><i class="fa-solid fa-rotate"></i> Reload</a></li>
-                            <li><a href=""><input type="checkbox">Select all</a></li>
-                            <li><a href=""><input type="checkbox">Unselect all</a></li>
-                            <li><a href=""><i class="fa-solid fa-trash"></i> trash</a></li>
-                        </ul>
+                    <div class="right-top-bar">
+                        <div class="home-menu">
+                            <ul>
+                                <li><a href=""><i class="fa-solid fa-house"></i> Home</a></li>
+                                <li><a href=""><i class="fa-solid fa-arrow-turn-up"></i> Up</a></li>
+                                <li><a href=""><i class="fa-solid fa-arrow-left"></i> Back</a></li>
+                                <li><a href=""><i class="fa-solid fa-arrow-right"></i> Forward</a></li>
+                                <li><a href=""><i class="fa-solid fa-rotate"></i> Reload</a></li>
+                                <li><a href=""><input type="checkbox">Select all</a></li>
+                                <li><a href=""><input type="checkbox">Unselect all</a></li>
+                                <li><a href=""><i class="fa-solid fa-trash"></i> trash</a></li>
+                            </ul>
+                        </div>
+                        <div class="grid-box">
+                            <span><i class="fa-solid fa-bars"></i></span>
+                            <span><i class="fa-solid fa-grip"></i></span>
+                            <span><i class="fa-solid fa-pause"></i></span>
+                        </div>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search files and folders" class="search-box-text">
+                            <button  class="search-box-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            
+                        </div>
                     </div>
-                    <div class="grid-box">
-                        <span><i class="fa-solid fa-bars"></i></span>
-                        <span><i class="fa-solid fa-grip"></i></span>
-                        <span><i class="fa-solid fa-pause"></i></span>
-                    </div>
-                    <div class="search-box">
-                        <input type="text" placeholder="Search files and folders" class="search-box-text">
-                        <input type="submit" value=" " class="search-box-btn">
-                    </div>
-
                     <!-- table part -->
                     <div class="table-area">
                         <table class="table " CELLSPACING="0" CELLPADDING="2">
@@ -106,56 +119,56 @@
                             </tr>
                             <tr>
                                 <td><i class="fa-solid fa-folder"></i> wp-admin</td>
-                                <td>read write</td>
+                                <td>777</td>
                                 <td>May 22 2023</td>
                                 <td>-</td>
                                 <td>Folder</td>
                             </tr>
                             <tr>
                                 <td><i class="fa-solid fa-folder"></i> wp-admin</td>
-                                <td>read write</td>
+                                <td>777</td>
                                 <td>May 22 2023</td>
                                 <td>-</td>
                                 <td>Folder</td>
                             </tr>
                             <tr>
                                 <td><i class="fa-solid fa-folder"></i> wp-admin</td>
-                                <td>read write</td>
+                                <td>777</td>
                                 <td>May 22 2023</td>
                                 <td>-</td>
                                 <td>Folder</td>
                             </tr>
                             <tr>
                                 <td><i class="fa-solid fa-folder"></i> wp-admin</td>
-                                <td>read write</td>
+                                <td>777</td>
                                 <td>May 22 2023</td>
                                 <td>-</td>
                                 <td>Folder</td>
                             </tr>
                             <tr>
                                 <td><i class="fa-solid fa-folder"></i> wp-admin</td>
-                                <td>read write</td>
+                                <td>777</td>
                                 <td>May 22 2023</td>
                                 <td>-</td>
                                 <td>Folder</td>
                             </tr>
                             <tr>
                                 <td><i class="fa-solid fa-folder"></i> wp-content</td>
-                                <td>read write</td>
+                                <td>777</td>
                                 <td>May 22 2023</td>
                                 <td>-</td>
                                 <td>Folder</td>
                             </tr>
                             <tr>
                                 <td><i class="fa-solid fa-folder"></i> wp-include</td>
-                                <td>read write</td>
+                                <td>777</td>
                                 <td>May 22 2023</td>
                                 <td>-</td>
                                 <td>Folder</td>
                             </tr>
                             <tr>
                                 <td><i class="fa-solid fa-file"></i> index.php</td>
-                                <td>read write</td>
+                                <td>777</td>
                                 <td>May 22 2023</td>
                                 <td>-</td>
                                 <td>Folder</td>
