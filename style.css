@@ -1,11 +1,16 @@
+/*google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
 body{
     font-size: 18px;
     background: #eee9;
+    font-family: 'Roboto', sans-serif;
 }
 body a{
     text-decoration:  none;
     color: black;
     font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 .header-area{
     width: 100%;

@@ -10,7 +10,7 @@
     .footer-left{width: 33%;}
     .footer-right{width: 40%;}
 }
- @media only screen  and (min-width:200px) and (max-width:815px) {
+ @media only screen  and (min-width:200px) and (max-width:799px) {
     .header-menu{width: 100%;}
     .left-side{width: 90%;margin:0 auto;float: none;margin-top: 25px;}
     .root-box{width: 73%;font-size: 17px;}
